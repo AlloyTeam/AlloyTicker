@@ -146,6 +146,7 @@ var toolbar =  new App.Toolbar({visibility:'hidden',
 setInterval(function(){
     slider.option.x = 720*ticker.currentTime/7000;
     if(ticker.currentTime>=7000){
+        ticker.currentTime=6999;
         ticker.pause();
         slider.show();
         toolbar.show();
