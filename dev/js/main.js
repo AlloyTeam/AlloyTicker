@@ -3,7 +3,7 @@ function randomNum(min,max){
 }
 
 var ticker = new AlloyTicker();
-ticker.start();
+
 
 function wordingAnimation() {
     var str = 'AlloyTicker',
@@ -44,9 +44,9 @@ function particleAnimation(){
 
     for(i=0;i<size;i++) {
         setTimeout((function(i){
-             return function(){
-                 ps[i].start();
-             }
+            return function(){
+                ps[i].start();
+            }
         })(i),i*20)
     }
     var canvas = document.querySelector('#particleCanvas');
@@ -93,6 +93,7 @@ function spriteAnimation() {
 
 var img = new Image();
 img.onload = function() {
+    ticker.start();
     spriteAnimation();
 
     setTimeout(function(){
@@ -145,6 +146,7 @@ var toolbar =  new App.Toolbar({visibility:'hidden',
 setInterval(function(){
     slider.option.x = 720*ticker.currentTime/7000;
     if(ticker.currentTime>=7000){
+        ticker.currentTime=6999;
         ticker.pause();
         slider.show();
         toolbar.show();
