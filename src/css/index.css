@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+h1 img{
+    position: relative;
+    top: 10px;
+}
+.box{
+    position: relative;
+    width: 840px;
+    height: 400px;
+    border:1px solid #333;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.sliderCtn{
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+}
+
+.toolbarCtn{
+    width: 840px;
+    margin:10px auto;
+    text-align: center;
+}
+.A,.l,.o,.y,.T,.i,.c,.k,.e,.r{
+    color: white;
+    width: 100px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 60px;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top:0;
+}

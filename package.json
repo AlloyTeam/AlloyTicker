@@ -1,0 +1,31 @@
+{
+  "name": "alloyticker",
+  "version": "0.1.0",
+  "description": "The Master of Time",
+  "main": "alloyticker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlloyTeam/AlloyTicker"
+  },
+  "keywords": [
+    "time",
+    "game"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-babel": "^6.1.2",
+    "gulp-file": "^0.2.0",
+    "gulp-replace": "^0.5.4",
+    "run-sequence": "^1.1.5"
+  },
+  "author": "dntzhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlloyTeam/AlloyTicker/issues/new"
+  },
+  "homepage": "http://alloyteam.github.io/AlloyTicker/"
+}
