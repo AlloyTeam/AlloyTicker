@@ -11,6 +11,7 @@ var AlloyTicker = function(){
     this.clockwise = true;
     this.ticks=[];
     this.isPause = false;
+    this.isStop = false;
 }
 
 AlloyTicker.prototype = {
@@ -42,11 +43,16 @@ AlloyTicker.prototype = {
     },
     play :function(){
         this.isPause = false;
+        if(this.isStop){
+            this.start();
+            this.isStop = false;
+        }
     },
     stop:function() {
         this.currentTime = 0;
         clearInterval(this.interval);
         this.tick();
+        this.isStop = true;
     },
     scale:function(value){
         clearInterval(this.interval);
