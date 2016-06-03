@@ -10,8 +10,8 @@ App.componentRes['component/toolbar/index.html'] =
     <input type="button" onclick="forward()"  value="forward" />\
     <input type="button" onclick="pause()"  value="pause" />\
     <input type="button" onclick="play()"  value="play" />\
-    <input type="button"  onclick="subTimeScale()" value="<<<" />\
-    <input type="button" onclick="addTimeScale()"  value=">>>" />\
+    <input type="button"  onclick="subTimeScale()" value="-" />\
+    <input type="button" onclick="addTimeScale()"  value="+" />\
     <input type="button" onclick="stop()"  value="stop" />\
     <input type="button" onclick="restart()"  value="restart" />\
 </div>';
