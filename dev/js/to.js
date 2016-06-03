@@ -24,11 +24,16 @@ To.prototype = {
     },
     tick:function(currentTime){
         var dt = currentTime - this.startTime;
-
-        if(this.timeOut&&dt<=this.time&&dt>=0){
-            if(dt===0) this.onStart(this.startVaule);
-            if(dt===this.time)this.onEnd(this.value);
-            this.timeOut=false;
+        if(this.timeOut){
+            if(dt<=this.time&&dt>=0) {
+                if (dt === 0) this.onStart(this.startVaule);
+                if (dt === this.time)this.onEnd(this.value);
+                this.timeOut = false;
+            }else if(dt < 0){
+                this.obj[this.property] = this.startVaule ;
+            }else if(dt> this.time){
+                this.obj[this.property] = this.value;
+            }
         }
         if(!this.timeOut) {
             if (dt >= this.time) {
