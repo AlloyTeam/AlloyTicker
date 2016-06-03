@@ -3,7 +3,7 @@ function randomNum(min,max){
 }
 
 var ticker = new AlloyTicker();
-ticker.start();
+
 
 function wordingAnimation() {
     var str = 'AlloyTicker',
@@ -93,6 +93,7 @@ function spriteAnimation() {
 
 var img = new Image();
 img.onload = function() {
+    ticker.start();
     spriteAnimation();
 
     setTimeout(function(){
