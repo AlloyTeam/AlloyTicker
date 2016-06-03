@@ -12,6 +12,7 @@ App.componentRes['component/toolbar/index.html'] =
     <input type="button" onclick="play()"  value="play" />\
     <input type="button"  onclick="subTimeScale()" value="<<<" />\
     <input type="button" onclick="addTimeScale()"  value=">>>" />\
+    <input type="button" onclick="stop()"  value="stop" />\
     <input type="button" onclick="restart()"  value="restart" />\
 </div>';
 
@@ -23,6 +24,7 @@ App.Toolbar  = Nuclear.create({
         this.play=this.option.play;
         this.addTimeScale=this.option.addTimeScale;
         this.subTimeScale=this.option.subTimeScale;
+        this.stop=this.option.stop;
         this.restart=this.option.restart;
     },
     render: function () {

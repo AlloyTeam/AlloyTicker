@@ -136,8 +136,12 @@ var toolbar =  new App.Toolbar({visibility:'hidden',
         ticker.play();
         ticker.scale(2);
     },
+    stop:function(){
+        ticker.stop();
+    },
     restart:function(){
         ticker.play();
+        ticker.forward();
         ticker.currentTime = 0;
         ticker.tick();
     }
