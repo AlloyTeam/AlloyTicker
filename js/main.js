@@ -134,10 +134,12 @@ var toolbar =  new App.Toolbar({visibility:'hidden',
     },
     subTimeScale:function(){
         ticker.play();
-        ticker.scale(2)
+        ticker.scale(2);
     },
-    stop:function(){
-        ticker.stop();
+    restart:function(){
+        ticker.play();
+        ticker.currentTime = 0;
+        ticker.tick();
     }
 }, "#toolbarCtn");
 
