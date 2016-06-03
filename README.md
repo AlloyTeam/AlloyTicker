@@ -2,4 +2,4 @@
 
 The Master of Time
 
-£Ä£Å£Í£Ï: http://alloyteam.github.io/AlloyTicker/
+Demo: http://alloyteam.github.io/AlloyTicker/
