@@ -6,8 +6,8 @@ App.componentRes['component/toolbar/index.html'] =
 \
 </style>\
 <div class="toolbar">\
-    <input type="button" onclick="back()" value="back" />\
-    <input type="button" onclick="forward()"  value="forward" />\
+    <input type="button" onclick="back()" value="<<" />\
+    <input type="button" onclick="forward()"  value=">>" />\
     <input type="button" onclick="pause()"  value="pause" />\
     <input type="button" onclick="play()"  value="play" />\
     <input type="button"  onclick="subTimeScale()" value="-" />\

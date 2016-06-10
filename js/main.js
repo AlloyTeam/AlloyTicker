@@ -39,7 +39,7 @@ function particleAnimation(){
     var ps=[],
         i= 0,size=100;
     for(;i<size;i++){
-        ps.push(new Particle(ticker,200,310,randomNum(-5,5)/50,-1*Math.random(),0,0.001))
+        ps.push(new Particle(ticker,200,310,randomNum(-15,15)/50,-1*Math.random(),0,0.001))
     }
 
     for(i=0;i<size;i++) {
