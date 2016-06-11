@@ -91,23 +91,6 @@ function spriteAnimation() {
     sprite.start();
 }
 
-var img = new Image();
-img.onload = function() {
-    ticker.start();
-    spriteAnimation();
-
-    setTimeout(function(){
-        particleAnimation();
-    },2000)
-
-    setTimeout(function(){
-        wordingAnimation();
-
-    },5000)
-
-}
-img.src= 'asset/mariosheet.png';
-
 var slider =  new App.Slider({ x:720 ,visibility:'hidden',change:function(p){
     ticker.goto(p*7000);
     ticker.play();
@@ -147,15 +130,29 @@ var toolbar =  new App.Toolbar({visibility:'hidden',
     }
 }, "#toolbarCtn");
 
+var img = new Image();
+img.onload = function() {
+    ticker.start();
+    spriteAnimation();
 
+    setTimeout(function(){
+        particleAnimation();
+    },2000)
+
+    setTimeout(function(){
+        wordingAnimation();
+        slider.show();
+        toolbar.show();
+    },5000)
+
+}
+img.src= 'asset/mariosheet.png';
 
 setInterval(function(){
     slider.option.x = 720*ticker.currentTime/7000;
     if(ticker.currentTime>=7000){
         ticker.currentTime=6999;
         ticker.pause();
-        slider.show();
-        toolbar.show();
     }
 
 },15)
